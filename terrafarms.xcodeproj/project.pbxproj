@@ -25,6 +25,10 @@
 		FA49EDC029F0A99F009BFDDA /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDBF29F0A99F009BFDDA /* FirebaseMessaging */; };
 		FA49EDC229F0A99F009BFDDA /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDC129F0A99F009BFDDA /* FirebaseRemoteConfig */; };
 		FA49EDC429F0A99F009BFDDA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDC329F0A99F009BFDDA /* FirebaseStorage */; };
+		FA49EDCA29F0B2AD009BFDDA /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDC929F0B2AD009BFDDA /* GoogleSignIn */; };
+		FA49EDCC29F0B2AD009BFDDA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDCB29F0B2AD009BFDDA /* GoogleSignInSwift */; };
+		FA49EDCE29F0B740009BFDDA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDCD29F0B740009BFDDA /* HomeView.swift */; };
+		FA49EDD029F0BF35009BFDDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDCF29F0BF35009BFDDA /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,8 @@
 		FA49EDAC29F04ADD009BFDDA /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Medium.ttf"; sourceTree = "<group>"; };
 		FA49EDAE29F06F02009BFDDA /* Registerview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registerview.swift; sourceTree = "<group>"; };
 		FA49EDB029F0A582009BFDDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA49EDCD29F0B740009BFDDA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA49EDCF29F0BF35009BFDDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,12 @@
 				FA49EDC429F0A99F009BFDDA /* FirebaseStorage in Frameworks */,
 				FA49EDC029F0A99F009BFDDA /* FirebaseMessaging in Frameworks */,
 				FA49EDB429F0A99F009BFDDA /* FirebaseAnalytics in Frameworks */,
+				FA49EDCA29F0B2AD009BFDDA /* GoogleSignIn in Frameworks */,
 				FA49EDBE29F0A99F009BFDDA /* FirebaseMLModelDownloader in Frameworks */,
 				FA49EDB629F0A99F009BFDDA /* FirebaseAuth in Frameworks */,
 				FA49EDBC29F0A99F009BFDDA /* FirebaseInAppMessaging-Beta in Frameworks */,
 				FA49EDC229F0A99F009BFDDA /* FirebaseRemoteConfig in Frameworks */,
+				FA49EDCC29F0B2AD009BFDDA /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +74,7 @@
 			children = (
 				FA49ED9529F03FF8009BFDDA /* terrafarms */,
 				FA49ED9429F03FF8009BFDDA /* Products */,
+				FA49EDC729F0B1C7009BFDDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +93,10 @@
 				FA49EDA929F048FC009BFDDA /* Info.plist */,
 				FA49EDA629F04818009BFDDA /* Font */,
 				FA49ED9629F03FF8009BFDDA /* terrafarmsApp.swift */,
+				FA49EDCF29F0BF35009BFDDA /* ContentView.swift */,
 				FA49EDAE29F06F02009BFDDA /* Registerview.swift */,
 				FA49ED9829F03FF8009BFDDA /* LoginView.swift */,
+				FA49EDCD29F0B740009BFDDA /* HomeView.swift */,
 				FA49ED9A29F03FFA009BFDDA /* Assets.xcassets */,
 				FA49ED9C29F03FFA009BFDDA /* Preview Content */,
 			);
@@ -108,6 +119,13 @@
 				FA49EDA729F0483F009BFDDA /* Urbanist-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		FA49EDC729F0B1C7009BFDDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +154,8 @@
 				FA49EDBF29F0A99F009BFDDA /* FirebaseMessaging */,
 				FA49EDC129F0A99F009BFDDA /* FirebaseRemoteConfig */,
 				FA49EDC329F0A99F009BFDDA /* FirebaseStorage */,
+				FA49EDC929F0B2AD009BFDDA /* GoogleSignIn */,
+				FA49EDCB29F0B2AD009BFDDA /* GoogleSignInSwift */,
 			);
 			productName = terrafarms;
 			productReference = FA49ED9329F03FF8009BFDDA /* terrafarms.app */;
@@ -167,6 +187,7 @@
 			mainGroup = FA49ED8A29F03FF8009BFDDA;
 			packageReferences = (
 				FA49EDB229F0A99F009BFDDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FA49EDC829F0B2AD009BFDDA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = FA49ED9429F03FF8009BFDDA /* Products */;
 			projectDirPath = "";
@@ -199,7 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA49ED9929F03FF8009BFDDA /* LoginView.swift in Sources */,
+				FA49EDD029F0BF35009BFDDA /* ContentView.swift in Sources */,
 				FA49ED9729F03FF8009BFDDA /* terrafarmsApp.swift in Sources */,
+				FA49EDCE29F0B740009BFDDA /* HomeView.swift in Sources */,
 				FA49EDAF29F06F02009BFDDA /* Registerview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +434,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		FA49EDC829F0B2AD009BFDDA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -458,6 +489,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA49EDB229F0A99F009BFDDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		FA49EDC929F0B2AD009BFDDA /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA49EDC829F0B2AD009BFDDA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		FA49EDCB29F0B2AD009BFDDA /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA49EDC829F0B2AD009BFDDA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

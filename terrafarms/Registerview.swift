@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct RegisterView: View {
     @State private var email: String = ""
@@ -43,7 +45,16 @@ struct RegisterView: View {
                     .cornerRadius(8)
 
                 Button(action: {
-                    // Perform login action
+                    Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                        if let error = error {
+                            // Handle sign up error
+                            print("Sign up error: \(error.localizedDescription)")
+                        } else {
+                            presentationMode.wrappedValue.dismiss()
+                            print("Sign up successful")
+                        }
+                    }
+
                 }) {
                     Text("Daftar").font(.custom("Urbanist-Medium", size: 16))
                         .foregroundColor(.white)
