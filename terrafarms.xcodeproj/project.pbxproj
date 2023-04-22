@@ -15,7 +15,6 @@
 		FA49EDAB29F04A94009BFDDA /* Urbanist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49EDAA29F04A94009BFDDA /* Urbanist-Bold.ttf */; };
 		FA49EDAD29F04ADD009BFDDA /* Urbanist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA49EDAC29F04ADD009BFDDA /* Urbanist-Medium.ttf */; };
 		FA49EDAF29F06F02009BFDDA /* Registerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDAE29F06F02009BFDDA /* Registerview.swift */; };
-		FA49EDB129F0A582009BFDDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA49EDB029F0A582009BFDDA /* GoogleService-Info.plist */; };
 		FA49EDB429F0A99F009BFDDA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDB329F0A99F009BFDDA /* FirebaseAnalytics */; };
 		FA49EDB629F0A99F009BFDDA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDB529F0A99F009BFDDA /* FirebaseAuth */; };
 		FA49EDB829F0A99F009BFDDA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDB729F0A99F009BFDDA /* FirebaseDatabase */; };
@@ -29,6 +28,7 @@
 		FA49EDCC29F0B2AD009BFDDA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDCB29F0B2AD009BFDDA /* GoogleSignInSwift */; };
 		FA49EDCE29F0B740009BFDDA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDCD29F0B740009BFDDA /* HomeView.swift */; };
 		FA49EDD029F0BF35009BFDDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49EDCF29F0BF35009BFDDA /* ContentView.swift */; };
+		FA49EDD229F145DD009BFDDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA49EDD129F145DC009BFDDA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +42,9 @@
 		FA49EDAA29F04A94009BFDDA /* Urbanist-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Bold.ttf"; sourceTree = "<group>"; };
 		FA49EDAC29F04ADD009BFDDA /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Medium.ttf"; sourceTree = "<group>"; };
 		FA49EDAE29F06F02009BFDDA /* Registerview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registerview.swift; sourceTree = "<group>"; };
-		FA49EDB029F0A582009BFDDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA49EDCD29F0B740009BFDDA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FA49EDCF29F0BF35009BFDDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA49EDD129F145DC009BFDDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,6 @@
 			children = (
 				FA49ED9529F03FF8009BFDDA /* terrafarms */,
 				FA49ED9429F03FF8009BFDDA /* Products */,
-				FA49EDC729F0B1C7009BFDDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,7 +88,7 @@
 		FA49ED9529F03FF8009BFDDA /* terrafarms */ = {
 			isa = PBXGroup;
 			children = (
-				FA49EDB029F0A582009BFDDA /* GoogleService-Info.plist */,
+				FA49EDD129F145DC009BFDDA /* GoogleService-Info.plist */,
 				FA49EDA929F048FC009BFDDA /* Info.plist */,
 				FA49EDA629F04818009BFDDA /* Font */,
 				FA49ED9629F03FF8009BFDDA /* terrafarmsApp.swift */,
@@ -119,13 +118,6 @@
 				FA49EDA729F0483F009BFDDA /* Urbanist-Regular.ttf */,
 			);
 			path = Font;
-			sourceTree = "<group>";
-		};
-		FA49EDC729F0B1C7009BFDDA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +180,7 @@
 			packageReferences = (
 				FA49EDB229F0A99F009BFDDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				FA49EDC829F0B2AD009BFDDA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FAD6C73829F44818000E1C49 /* XCRemoteSwiftPackageReference "tensorflow" */,
 			);
 			productRefGroup = FA49ED9429F03FF8009BFDDA /* Products */;
 			projectDirPath = "";
@@ -208,7 +201,7 @@
 				FA49EDA829F0483F009BFDDA /* Urbanist-Regular.ttf in Resources */,
 				FA49EDAD29F04ADD009BFDDA /* Urbanist-Medium.ttf in Resources */,
 				FA49EDAB29F04A94009BFDDA /* Urbanist-Bold.ttf in Resources */,
-				FA49EDB129F0A582009BFDDA /* GoogleService-Info.plist in Resources */,
+				FA49EDD229F145DD009BFDDA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +433,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 7.0.0;
+			};
+		};
+		FAD6C73829F44818000E1C49 /* XCRemoteSwiftPackageReference "tensorflow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tensorflow/tensorflow.git";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
