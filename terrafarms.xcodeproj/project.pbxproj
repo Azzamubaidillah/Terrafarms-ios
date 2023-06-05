@@ -19,7 +19,6 @@
 		FA49EDB629F0A99F009BFDDA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDB529F0A99F009BFDDA /* FirebaseAuth */; };
 		FA49EDB829F0A99F009BFDDA /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDB729F0A99F009BFDDA /* FirebaseDatabase */; };
 		FA49EDBA29F0A99F009BFDDA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDB929F0A99F009BFDDA /* FirebaseFirestore */; };
-		FA49EDBC29F0A99F009BFDDA /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDBB29F0A99F009BFDDA /* FirebaseInAppMessaging-Beta */; };
 		FA49EDBE29F0A99F009BFDDA /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDBD29F0A99F009BFDDA /* FirebaseMLModelDownloader */; };
 		FA49EDC029F0A99F009BFDDA /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDBF29F0A99F009BFDDA /* FirebaseMessaging */; };
 		FA49EDC229F0A99F009BFDDA /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = FA49EDC129F0A99F009BFDDA /* FirebaseRemoteConfig */; };
@@ -60,7 +59,6 @@
 				FA49EDCA29F0B2AD009BFDDA /* GoogleSignIn in Frameworks */,
 				FA49EDBE29F0A99F009BFDDA /* FirebaseMLModelDownloader in Frameworks */,
 				FA49EDB629F0A99F009BFDDA /* FirebaseAuth in Frameworks */,
-				FA49EDBC29F0A99F009BFDDA /* FirebaseInAppMessaging-Beta in Frameworks */,
 				FA49EDC229F0A99F009BFDDA /* FirebaseRemoteConfig in Frameworks */,
 				FA49EDCC29F0B2AD009BFDDA /* GoogleSignInSwift in Frameworks */,
 			);
@@ -76,6 +74,7 @@
 				FA49ED9429F03FF8009BFDDA /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		FA49ED9429F03FF8009BFDDA /* Products */ = {
 			isa = PBXGroup;
@@ -141,7 +140,6 @@
 				FA49EDB529F0A99F009BFDDA /* FirebaseAuth */,
 				FA49EDB729F0A99F009BFDDA /* FirebaseDatabase */,
 				FA49EDB929F0A99F009BFDDA /* FirebaseFirestore */,
-				FA49EDBB29F0A99F009BFDDA /* FirebaseInAppMessaging-Beta */,
 				FA49EDBD29F0A99F009BFDDA /* FirebaseMLModelDownloader */,
 				FA49EDBF29F0A99F009BFDDA /* FirebaseMessaging */,
 				FA49EDC129F0A99F009BFDDA /* FirebaseRemoteConfig */,
@@ -180,7 +178,6 @@
 			packageReferences = (
 				FA49EDB229F0A99F009BFDDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				FA49EDC829F0B2AD009BFDDA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
-				FAD6C73829F44818000E1C49 /* XCRemoteSwiftPackageReference "tensorflow" */,
 			);
 			productRefGroup = FA49ED9429F03FF8009BFDDA /* Products */;
 			projectDirPath = "";
@@ -435,14 +432,6 @@
 				minimumVersion = 7.0.0;
 			};
 		};
-		FAD6C73829F44818000E1C49 /* XCRemoteSwiftPackageReference "tensorflow" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tensorflow/tensorflow.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -465,11 +454,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FA49EDB229F0A99F009BFDDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
-		};
-		FA49EDBB29F0A99F009BFDDA /* FirebaseInAppMessaging-Beta */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FA49EDB229F0A99F009BFDDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseInAppMessaging-Beta";
 		};
 		FA49EDBD29F0A99F009BFDDA /* FirebaseMLModelDownloader */ = {
 			isa = XCSwiftPackageProductDependency;
