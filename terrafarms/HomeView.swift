@@ -68,42 +68,74 @@ struct HomeView: View {
                         }.font(.custom("Urbanist-Medium", size: 16))
                             .foregroundColor(.accentColor)
                     ).padding(.vertical)
+                
+                HStack() {
+                    Image(systemName: "map").foregroundColor(.green)
+                    Text("Lahan desa papayan")
+                }
 
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color.gray, lineWidth: 1).frame(height: 80)
-                    .overlay(
-                        VStack {
-                            HStack {
-                                Image(systemName: "map").foregroundColor(.green)
-                                Text("Lahan Jagung Mandalamekar")
-                            }
+                HStack(spacing: 15){
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1).frame(width: 110, height: 80)
+                        .overlay(
+                            VStack {
 
-                            HStack {
-                                VStack {
-                                    HStack {
-                                        Text("6.3")
-                                        Image(systemName: "info.circle")
+                            
+                                    VStack {
+                                        Text("pH")
+                                            .font(.caption)
+                                            Text("6.3")
+                                                
+                                           
+                                        .font(.title)
+                                            .fontWeight(.bold)
+                                        Text("Normal")
+                                            .fontWeight(.bold)
                                     }
-                                    Text("pH")
-                                }
-                                VStack {
-                                    HStack {
-                                        Text("5%")
-                                        Image(systemName: "info.circle")
+                                    
+                                
+                            }.font(.custom("Urbanist", size: 16))
+                                .foregroundColor(.accentColor)
+                        )
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1).frame(width: 110, height: 80)
+                        .overlay(
+                            VStack {
+                             
+                                    VStack {
+                                        Text("pH")
+                                        HStack {
+                                            Text("6.3")
+                                            Image(systemName: "info.circle")
+                                        }
+                                       
                                     }
-                                    Text("Kelembapan Tanah")
-                                }
-                                VStack {
-                                    HStack {
-                                        Text("2000 ppm")
-                                        Image(systemName: "info.circle")
+                                    
+                                
+                            }.font(.custom("Urbanist", size: 16))
+                                .foregroundColor(.accentColor)
+                        )
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1).frame(width: 110, height: 80)
+                        .overlay(
+                            VStack {
+                                
+
+                             
+                                    VStack {
+                                        Text("pH")
+                                        HStack {
+                                            Text("6.3")
+                                            Image(systemName: "info.circle")
+                                        }
+                                       
                                     }
-                                    Text("Tds")
-                                }
-                            }
-                        }.font(.custom("Urbanist", size: 16))
-                            .foregroundColor(.accentColor)
-                    )
+                                    
+                                
+                            }.font(.custom("Urbanist", size: 16))
+                                .foregroundColor(.accentColor)
+                        )
+                }
 
                 Button(action: {
                     do {
